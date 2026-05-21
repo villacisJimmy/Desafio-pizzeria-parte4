@@ -5,7 +5,7 @@ const Pizza = () => {
   const [pizza, setPizza] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/pizzas/p001")
+    fetch("http://localhost:5001/api/pizzas/p001")
       .then((res) => res.json())
       .then((data) => setPizza(data))
       .catch((err) => console.error("Error al cargar la pizza:", err));
